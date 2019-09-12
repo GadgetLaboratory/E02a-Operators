@@ -64,7 +64,8 @@ def orderOperations(a1,a2,a3):
     i.e., changes normal order or operations 
     '''
     toReturn = 0
-    # add your code here
+    toReturn = a1 + a2
+    toReturn * a3
     return toReturn
 
 def whichType(t):
@@ -72,31 +73,31 @@ def whichType(t):
     Returns the python data type of t
     '''
     toReturn = ''
-    # add your code here
+    toReturn = str(type(t))
     return toReturn
 
 def convertInt(i):
     '''
-    Converts i to an integer
+    Converts i to an integer -- won't work if letters are present!
     '''
     toReturn = 0
-    # add your code here
+    toReturn = int(i)
     return toReturn
 
 def convertFloat(f):
     '''
-    Converts f to a float
+    Converts f to a float -- you should probably input a whole number or a number string!
     '''
     toReturn = 0.0
-    # add your code here
+    toReturn = float(f)
     return toReturn
 
 def convertStr(s):
     '''
-    Converts s to a string
+    Converts s to a string -- any input will be fine for this.
     '''
     toReturn = ''
-    # add your code here
+    toReturn = str(s)
     return toReturn
 
 def concat(s1,s2):
@@ -104,7 +105,7 @@ def concat(s1,s2):
     Concatenates (string) s2 to the end of s1
     '''
     toReturn = ''
-    # add your code here
+    toReturn = str(s1), str(s2)
     return toReturn
 
 def whichChar(s,a):
