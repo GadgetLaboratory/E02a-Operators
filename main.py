@@ -5,179 +5,151 @@ def add(a1,a2):
     '''
     Adds two numbers together
     '''
-    toReturn = 0
-    toReturn = a1 + a2
-    return toReturn
+    return a1 + a2
 
 def sub(a1,a2):
     '''
     Subtracts a2 from a1
     '''
-    toReturn = 0
-    toReturn = a2 - a1
-    return toReturn
+    return a1 - a2
 
 def mult(a1,a2):
     '''
     Multiplies a1 by a2
     '''
-    toReturn = 0
-    toReturn = a1 * a2
-    return toReturn
+    return a1 * a2
 
 def div(a1,a2):
     '''
     Divides a1 by a2
     '''
-    toReturn = 0
-    toReturn = a1 / a2
-    return toReturn
+    return a1 / a2
 
 def floorDiv(a1,a2):
     '''
     Divides a1 by a2 with remainder rounded down
     '''
-    toReturn = 0
-    toReturn = a1 // a2
-    return toReturn
+    return a1 // a2
 
 def mod(a1,a2):
     '''
     Returns the remainder of a1 divided by a2
     e.g., mod(5,3) = 2, mod(15,5) = 0, mod(15,4) = 3
     '''
-    toReturn = 0
-    toReturn = a1 % a2
-    return toReturn
+    return a1 % a2
 
 def exp(a1,a2):
     '''
     Returns the a1 to the a2 power (exponent)
     '''
-    toReturn = 0
-    toReturn = a1 ** a2
-    return toReturn
+    return int(a1 ** a2)
 
 def orderOperations(a1,a2,a3):
     '''
     Returns (a1 plus a2) multiplied by a3
     i.e., changes normal order or operations 
     '''
-    toReturn = 0
-    toReturn = a1 + a2
-    toReturn * a3
-    return toReturn
+    toReturn = int(a1 + a2)
+    return toReturn * a3
 
 def whichType(t):
     '''
     Returns the python data type of t
     '''
-    toReturn = ''
-    toReturn = str(type(t))
-    return toReturn
+    return type(t)
 
 def convertInt(i):
     '''
     Converts i to an integer -- won't work if letters are present!
     '''
-    toReturn = 0
-    toReturn = int(i)
-    return toReturn
+    return int(i)
 
 def convertFloat(f):
     '''
     Converts f to a float -- you should probably input a whole number or a number string!
     '''
-    toReturn = 0.0
-    toReturn = float(f)
-    return toReturn
+    return float(f)
 
 def convertStr(s):
     '''
     Converts s to a string -- any input will be fine for this.
     '''
-    toReturn = ''
-    toReturn = str(s)
-    return toReturn
+    return str(s)
 
 def concat(s1,s2):
     '''
     Concatenates (string) s2 to the end of s1
     '''
-    toReturn = ''
-    toReturn = str(s1), str(s2)
-    return toReturn
+    return s1.join(s2)
 
 def whichChar(s,a):
     '''
     Returns the character at position a of string s
     '''
-    toReturn = ''
-    # add your code here
-    return toReturn
+    return str(s[a])
 
 def substr(s,a1,a2):
     '''
     Returns a substring of s (from position a1 to a2)
     '''
-    toReturn = ''
-    # add your code here
-    return toReturn
+    return str(s[a1:a2])
 
 def reverseStr(s):
     '''
     Returns a string which is a reversed version of s
     '''
-    toReturn = ''
-    # add your code here
-    return toReturn
+    return ''.join(reversed(s))
 
 def isIn(l,e):
     '''
     Returns true if element e is in list l
     '''
-    toReturn = ''
-    # add your code here
+    toReturn = False
+    for i in l:
+        if i == e:
+            toReturn = True
+            break
     return toReturn
 
 def randomElement(l):
     '''
     Returns a random element of list l
     '''
-    toReturn = ''
-    # add your code here
-    return toReturn
+    return random.choice(l)
 
 def randomNumber():
     '''
     Returns a random number between 1000 and 9999
     '''
-    toReturn = 0
-    # add your code here
-    return toReturn
+    return random.randint(1000, 9999)
 
 def reverseList(l):
     '''
     Returns a list which is a mirror of l (each element is present in reverse order from l)
     '''
-    toReturn = []
-    # add your code here
-    return toReturn
+    return l[::-1]
 
 def shuffleList(l):
     '''
     Returns a list which has all the elements of l in a random order
     '''
-    toReturn = []
-    # add your code here
-    return toReturn
+    return random.shuffle(l)
 
 def listUntil(a):
     '''
-    Returns a list contains numbers from 0 to a
+    Returns a list that contains numbers from 0 to a
     '''
-    toReturn = []
-    # add your code here
+    toReturn = [0]
+    count = 0
+    if a != 0:
+        while a > 0:
+            count += 1
+            toReturn.append(count)
+            a -= 1
+        while a < 0:
+            count -= 1
+            toReturn.append(count)
+            a += 1
     return toReturn
 
 

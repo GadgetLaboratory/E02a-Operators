@@ -32,3 +32,8 @@ The grading criteria will be as follows:
 * [8] Accomplishes the objective of the exercise
 
 10 points total
+
+----------
+Hi!  Larry here!  This took way longer than it ever should have just to get some functions out of the way.  I really need to improve my ability to get into the zone, and quick...
+So, in filling in all of these functions, I feel all of my old Python knowledge coming back to me from last year.  As for what I couldn't remember, it was very quick and easy to learn.  I also remembered that it was good practice to make functions as clean and expedient as one can manage; to my own satisfaction, I was able to condense several of the functions into only one line.
+There's one thing I can't seem to place.  The randomization of lists at the ends always prints None; when I looked it up, it was because the function will only ever shuffle the lists instead of print anything from them, even when it's set to print out the list or something within the list later on.  Maybe I'm just dumb-dumb.  What am I doing wrong there?  Maybe time will tell, I don't know.
